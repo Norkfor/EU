@@ -35,7 +35,22 @@ namespace EU
 
     private static void HatodikFeladat()
     {
-
+      bool volte = false;
+      foreach (var cs in csatlakozas)
+      {
+        if (cs.ev.Month == 05)
+        {
+          volte = true;
+        }
+      }
+      if (volte == true)
+      {
+        Console.WriteLine("6. feladat: Májusban volt csatlakozás.");
+      }
+      else
+      {
+        Console.WriteLine("6. feladat: Májusban nem volt csatlakozás.");
+      }
     }
 
     private static void OtodikFeladat()
