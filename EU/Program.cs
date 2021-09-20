@@ -30,6 +30,17 @@ namespace EU
 
     private static void HetedikFeladat()
     {
+      int hanyadik = 0;
+      DateTime nagyobbe = csatlakozas[0].ev;
+      for (int i = 0; i < csatlakozas.Count; i++)
+      {
+        if (csatlakozas[i].ev > nagyobbe)
+        {
+          nagyobbe = csatlakozas[i].ev;
+          hanyadik = i;
+        }
+      }
+      Console.WriteLine("7. feladat: Legutoljára csatlakozott ország: {0}", csatlakozas[hanyadik].orszag);
 
     }
 
