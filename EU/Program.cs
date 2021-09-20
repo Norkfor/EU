@@ -45,7 +45,15 @@ namespace EU
 
     private static void NegyedikFeladat()
     {
-
+      int db = 0;
+      for (int i = 0; i < csatlakozas.Count; i++)
+      {
+        if (csatlakozas[i].ev.Year == 2007)
+        {
+          db++;
+        }
+      }
+      Console.WriteLine("4. feladat: 2007-ben {0} ország csatlakozott.", db);
     }
 
     private static void HarmadikFeladat()
