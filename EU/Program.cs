@@ -50,7 +50,15 @@ namespace EU
 
     private static void HarmadikFeladat()
     {
-
+      int db = 0;
+      for (int i = 0; i < csatlakozas.Count; i++)
+      {
+        if (csatlakozas[i].ev < DateTime.Parse("2018. 01. 01"))
+        {
+          db++;
+        }
+      }
+      Console.WriteLine("3. feladat: EU tagállamainak száma: {0} db", db);
     }
 
     private static void MasodikFeladat()
