@@ -40,7 +40,15 @@ namespace EU
 
     private static void OtodikFeladat()
     {
-
+      int hanyadik = 0;
+      for (int i = 0; i < csatlakozas.Count; i++)
+      {
+        if (csatlakozas[i].orszag == "Magyarország")
+        {
+          hanyadik = i;
+        }
+      }
+      Console.WriteLine("5. feladat: Magyarország csatlakozásának dátuma: {0}", csatlakozas[hanyadik].ev.ToString("yyyy/MM/dd"));
     }
 
     private static void NegyedikFeladat()
