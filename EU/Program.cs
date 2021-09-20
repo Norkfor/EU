@@ -26,6 +26,7 @@ namespace EU
     private static void NyolcadikFeladat()
     {
 
+
     }
 
     private static void HetedikFeladat()
